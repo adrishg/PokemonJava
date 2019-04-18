@@ -1,7 +1,7 @@
 public class Jugador{
-	String nombre;
-	char[] pociones;
-	char[] pokemones;
+	public String nombre;
+	public char[] pociones;
+	public char[] pokemones;
 
 	public int GuardarPokemon(){
 
