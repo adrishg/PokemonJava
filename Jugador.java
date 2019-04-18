@@ -1,7 +1,14 @@
 public class Jugador{
 	public String nombre;
-	public char[] pociones;
+	public Pocion[] pociones;
 	public Pokemon[] pokemones;
+
+	//Constructor
+	public Jugador (String nombre, Pocion[] pociones, Pokemon[] pokemones){
+		this.nombre=nombre;
+		this.pociones=pociones;
+		this.pokemones=pokemones;
+	} 
 
 
 	public String getNombre(){
@@ -16,8 +23,6 @@ public class Jugador{
 	public char getPociones(){
 		return pociones;
 	}
-
-
 
 	public int GuardarPokemon(){
 
@@ -44,9 +49,6 @@ public class Jugador{
 		}
 
 		
-
-
-
 	} 
 }
 
