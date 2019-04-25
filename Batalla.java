@@ -20,6 +20,8 @@ public class Batalla{
 
 /////////////////////////	ESTE METODO VA EN JUEGO //////////////////////////7
 
+getMultiplicador("Venusaur", "Picachu");
+
 	public float getMultiplicadorElemental(Pokemon atacante, Pokemon atacado ){
 		if (atacante.tipo=="Fuego"){
 			//• Fuego: x2 de daño a tipo Hierba, x0.5 a tipo Agua o Fuego, x1 a otro tipo.
