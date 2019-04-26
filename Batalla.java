@@ -17,7 +17,7 @@ public class Batalla{
     	String nombre = scanner.nextLine();
     	System.out.println(" Ahora deberás elegir seis pokemón para jugar");
     	System.out.println(	"Los pokemón disponibles son: ");
-    	imprimirPokemon();
+    	ListarPokemon();
     	for(int i=0; i<6 ; i++){  //Esto es para que se eligan 6 pokemón
     		System.out.println("Ingresa tu pokemón número "+i+" :");
     		arrayPokemon.add(pokemonTotal.get(scanner.nextLine()));

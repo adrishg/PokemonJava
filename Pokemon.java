@@ -39,7 +39,7 @@ public Pokemon(String apodo, float vida, float defensa, String estado, String ti
 
 /*Métodos de Pokemón*/
 
-
+/*
 	public float RecibirDanio(){
 
 	}
@@ -62,5 +62,5 @@ public Pokemon(String apodo, float vida, float defensa, String estado, String ti
 	public float RealizarAtaque2(){
 		
 	}
-
+*/
 }

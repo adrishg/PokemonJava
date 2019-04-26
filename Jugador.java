@@ -57,4 +57,5 @@ public class Jugador{
 /*public int PocionVida(){
 		pokemon.vida=pokemon.vida*.20;
 	}
+
 */
