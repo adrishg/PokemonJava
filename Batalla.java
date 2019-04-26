@@ -42,17 +42,54 @@ public class Batalla{
     	return jugador;
 	}
 
-
-	public int turno(){
+public int getTurno(){
 		
-		turno = contador%2;
+		turno = contador%2
 		if (turno == 0 ){
 			System.out.println("Turno de :" + jugador1.getNombre());
 
 		}else{
 			System.out.println("Turno de :" + jugador2.getNombre());
 		}
+		return turno;
 }
+
+public void partida(Jugador jugador1, Jugador jugador2){
+	turno= getTurno();
+	if (turno==1){
+		//Le va al jugador 1
+		jugarTurno(jugador1, jugador2);
+	}
+	else if (turno==0){
+		//Le va al jugador 2
+	}
+	else{
+		System.out.println("Ha ocurrido un error inesperado, reinicia la partida");
+	}
+}
+
+
+public void jugarTurno(Jugador jugador1, Jugador jugador2){
+	System.out.println(	"Tus pokemones disponibles son: \n");
+	listarPokemonJugador(jugador1);
+	System.out.println("Elige tu pokemón para esta partida: ");
+	String pokemonJugador1 = scanner.nextLine();
+
+}
+
+
+public void listarPokemonJugador(Jugador x){
+
+	
+	Jugador.getPokemones()
+}
+
+
+
+
+
+
+
 
 
 
