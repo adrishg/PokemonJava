@@ -1,18 +1,18 @@
 public class Pokemon {
 	String apodo;
-	float vida;
-	float defensa;
+	double vida;
+	double defensa;
 	String estado; //(paralizado, quemado, envenenado, etc.).
 	String tipo; //(Agua, Fuego, Hierba y Eléctrico). (4)
-	float velocidad;
+	double velocidad;
 // GETTERS
 	public String getApodo(){
 		return apodo;
 	}
-	public float getVida(){
+	public double getVida(){
 		return vida;
 	}
-	public float getDefensa(){
+	public double getDefensa(){
 		return defensa;
 	}
 
@@ -22,13 +22,13 @@ public class Pokemon {
 	public String getTipo(){
 		return tipo;
 	}
-	public float getVelocidad(){
+	public double getVelocidad(){
 		return velocidad;
 	}
 /* Fin de los getters*/ 
 
 /*Método constructor*/
-public Pokemon(String apodo, float vida, float defensa, String estado, String tipo, float velocidad){
+public Pokemon(String apodo, double vida, double defensa, String estado, String tipo, double velocidad){
 	this.apodo= apodo;
 	this.vida= vida;
 	this.defensa= defensa;
@@ -40,26 +40,26 @@ public Pokemon(String apodo, float vida, float defensa, String estado, String ti
 /*Métodos de Pokemón*/
 
 /*
-	public float RecibirDanio(){
+	public double RecibirDanio(){
 
 	}
 
-	public float  RecibirVidaPocion(){ ///Recibir puntos de vida pociones, de ataque pociones y puntos defensar
+	public double  RecibirVidaPocion(){ ///Recibir puntos de vida pociones, de ataque pociones y puntos defensar
 
 	}
 
-	public float RecibirAtaquePocion(){
+	public double RecibirAtaquePocion(){
 
 	}
-	public float RecibirDefensaPocion(){
-
-	}
-
-	public float RealizarAtaque1(){
+	public double RecibirDefensaPocion(){
 
 	}
 
-	public float RealizarAtaque2(){
+	public double RealizarAtaque1(){
+
+	}
+
+	public double RealizarAtaque2(){
 		
 	}
 */

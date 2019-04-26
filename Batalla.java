@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class Batalla{
 	
 	public String inicializarJuego(){
 		System.out.println(	"Bienvenido al juego de pokemón de Rolando y Adriana");
 		System.out.println(	"***************************************************");
+		System.out.println("Instrucciones: ****************************************************+");
 
 		System.out.println(	"Jugador1, favor de ingresar tus datos");
 		Jugador jugador1 = datosCompletos();
@@ -24,12 +27,13 @@ public class Batalla{
     	}
     	//arrayPociones=inicializarPociones();
     	//Al iniciar el juego, cada Jugador tendra 2 pociones de cada tipo.
-    	arrayPociones.add(new Pocion("Vida"));
-    	arrayPociones.add(new Pocion("Vida"));
-    	arrayPociones.add(new Pocion("Defensa"));
-    	arrayPociones.add(new Pocion("Defensa"));
-    	arrayPociones.add(new Pocion("Ataque"));
-    	arrayPociones.add(new Pocion("Ataque"));
+    	Pocion arrayPociones[] = new Pocion[6];
+    	arrayPociones[0] = new Pocion("pocionVida");
+    	arrayPociones[1] = new Pocion("pocionVida");
+    	arrayPociones[2] = new Pocion("pocionDefensa");
+    	arrayPociones[3] = new Pocion("pocionDefensa");
+    	arrayPociones[4] = new Pocion("pocionAtaque");
+    	arrayPociones[5] = new Pocion("pocionAtaque");
 
     	System.out.println(" Se te han asignado dos pociones de Vida, dos de Defensa y dos Ataque, use them wisely");
     	
@@ -41,7 +45,7 @@ public class Batalla{
 
 	public int turno(){
 		
-		turno = contador%2
+		turno = contador%2;
 		if (turno == 0 ){
 			System.out.println("Turno de :" + jugador1.getNombre());
 
@@ -59,7 +63,7 @@ public class Batalla{
 
 /////////////////////////	ESTE METODO VA EN JUEGO //////////////////////////7
 
-getMultiplicador("Venusaur", "Picachu");
+//getMultiplicador("Venusaur", "Picachu");
 
 	public float getMultiplicadorElemental(Pokemon atacante, Pokemon atacado ){
 		if (atacante.tipo=="Fuego"){
@@ -125,4 +129,3 @@ getMultiplicador("Venusaur", "Picachu");
 
 	}
 
-}
