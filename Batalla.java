@@ -1,5 +1,42 @@
 public class Batalla{
 	
+	public String inicializarJuego(){
+		System.out.println(	"Bienvenido al juego de pokemón de Rolando y Adriana");
+		System.out.println(	"***************************************************");
+
+		System.out.println(	"Jugador1, favor de ingresar tus datos");
+		Jugador jugador1 = datosCompletos();
+		System.out.println(	"Jugador2, favor de ingresar tus datos");
+		Jugador jugador2 = datosCompletos();
+
+	}
+
+
+	public Jugador datosCompletos(){
+    	System.out.println("Nombre:");
+    	String nombre = scanner.nextLine();
+    	System.out.println(" Ahora deberás elegir seis pokemón para jugar");
+    	System.out.println(	"Los pokemón disponibles son: ");
+    	imprimirPokemon();
+    	for(int i=0; i<6 ; i++){  //Esto es para que se eligan 6 pokemón
+    		System.out.println("Ingresa tu pokemón número "+i+" :");
+    		arrayPokemon.add(pokemonTotal.get(scanner.nextLine()));
+    	}
+    	//arrayPociones=inicializarPociones();
+    	//Al iniciar el juego, cada Jugador tendra 2 pociones de cada tipo.
+    	arrayPociones.add(new Pocion("Vida"));
+    	arrayPociones.add(new Pocion("Vida"));
+    	arrayPociones.add(new Pocion("Defensa"));
+    	arrayPociones.add(new Pocion("Defensa"));
+    	arrayPociones.add(new Pocion("Ataque"));
+    	arrayPociones.add(new Pocion("Ataque"));
+
+    	System.out.println(" Se te han asignado dos pociones de Vida, dos de Defensa y dos Ataque, use them wisely");
+    	
+    	Jugador jugador = new Jugador(nombre,arrayPokemon,arrayPociones);
+
+    	return jugador;
+	}
 
 
 	public int turno(){
@@ -9,8 +46,10 @@ public class Batalla{
 			System.out.println("Turno de :" + jugador1.getNombre());
 
 		}else{
-			System.out.println("Turno de :" + juagdor2.getNombre());
+			System.out.println("Turno de :" + jugador2.getNombre());
 		}
+}
+
 
 
 
