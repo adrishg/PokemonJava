@@ -37,6 +37,8 @@ public Pokemon(String apodo, double vida, double defensa, String estado, String 
 	this.velocidad=velocidad;
 }
 
+
+
 /*Métodos de Pokemón*/
 
 /*
@@ -63,4 +65,24 @@ public Pokemon(String apodo, double vida, double defensa, String estado, String 
 		
 	}
 */
+public int ListarPokemon(){
+
+Pokemon	arrayPokemon[]= new Pokemon[6];
+				arrayPokemon[0]= new Pokemon("Pikachu",100,100,"OK","Electrico",100);
+				arrayPokemon[1]= new Pokemon("Bulbasaur",100,100,"OK","Hierba",100);
+				arrayPokemon[2]= new Pokemon("Ivysaur",100,100,"OK","Hierba",100);
+				arrayPokemon[3]= new Pokemon("Snorlax",100,100,"OK","Normal",100);
+				arrayPokemon[4]= new Pokemon("Miau",100,100,"OK","Normal",100);
+				arrayPokemon[5]= new Pokemon("Ratata",100,100,"OK","Normal",100);
+Pokemon	arrayPokemon2[]= new Pokemon[6];
+				arrayPokemon2[0]= new Pokemon("Pikachu",100,100,"OK","Electrico",100);
+				arrayPokemon2[1]= new Pokemon("Bulbasaur",100,100,"OK","Hierba",100);
+				arrayPokemon2[2]= new Pokemon("Ivysaur",100,100,"OK","Hierba",100);
+				arrayPokemon2[3]= new Pokemon("Snorlax",100,100,"OK","Normal",100);
+				arrayPokemon2[4]= new Pokemon("Miau",100,100,"OK","Normal",100);
+				arrayPokemon2[5]= new Pokemon("Ratata",100,100,"OK","Normal",100);
+
+return 12; //No jala si pongo Void
+}
+
 }
